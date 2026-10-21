@@ -22,15 +22,13 @@ $authority = $_SESSION['authority'] ?? 'guest';
             <li>D.I.Blogについて</li>
             <li>登録フォーム</li>
             <li>問い合わせ</li>
-            <?php if ($authority === '1'): ?>
             <li>
-                <a href = "regist.php">アカウント登録</a>
-                
+                <a href = "employee registration1.php">採用応募はこちら</a>
+                //ここのリンク先後で変更する
             </li>
-            <?php endif; ?>
             <?php if ($authority === '1'): ?>
             <li>
-                <a href = "list2.php">アカウント一覧</a>
+                <a href = "list1.php">採用管理関連</a>
             </li>
             <?php endif; ?>
             <li>その他</li>
