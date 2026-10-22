@@ -23,8 +23,7 @@ $authority = $_SESSION['authority'] ?? 'guest';
             <li>登録フォーム</li>
             <li>問い合わせ</li>
             <li>
-                <a href = "employee registration1.php">採用応募はこちら</a>
-                //ここのリンク先後で変更する
+                <a href = "recruit1.php">採用応募はこちら</a>
             </li>
             <?php if ($authority === '1'): ?>
             <li>
