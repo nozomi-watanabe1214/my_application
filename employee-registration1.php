@@ -43,7 +43,7 @@
         <div>
             <label>パスワード</label>
             <input type = "password" class = "text"
-                   size = "35" name = "password" maxlength = "10" pattern = "^[a-zA-Z0-9]*$" required>
+                   size = "35" name = "password" minlength ="6" maxlength = "10" pattern = "^[a-zA-Z0-9]*$" placeholder="※半角英数字6字以上" required>
         </div>
         
         <div>
