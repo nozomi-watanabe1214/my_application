@@ -35,13 +35,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>ログイン画面</title>
+        <title>社員ログイン画面</title>
         <link rel = "stylesheet" type = "text/css" href = "style-login.css">
     </head>
     
     <body>
         <header></header>
-          <h1>ログイン画面</h1>
+          <h1>社員ログイン画面</h1>
         
         <div class="login">
             <form action="" method="post">
