@@ -35,12 +35,20 @@
         </div>
         
         <div>
-            <label>
+            <label>生年月日</label>
             <select name = "birthday" required>
+                <option value="">年</option>
+                <?php
+                $currentyear = (int)date('Y');
+                for($year = $currentyear; $year < 1990; $year++){
+                    echo "<option value ='{$year}'>{$year}年</option>";
+                }
+                ?>
+            </select>
+                
                 
                 //ここにプルダウン情報作る
-                
-                </select></label></div>
+              </div>
         
         <div>
             <label>メールアドレス</label>
