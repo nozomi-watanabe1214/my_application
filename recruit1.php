@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>採用応募画面</title>
-        <link rel = "stylesheet" type = "text/css" href = "style2.css">
+        <link rel = "stylesheet" type = "text/css" href = "recruit1.css">
     </head>
     
     <body>
@@ -36,19 +36,38 @@
         
         <div>
             <label>生年月日</label>
-            <select name = "birthday" required>
+            <select name = "birth_year" required>
                 <option value="">年</option>
                 <?php
+                
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL); 
                 $currentyear = (int)date('Y');
-                for($year = $currentyear; $year < 1990; $year++){
+                for($year = $currentyear; $year >= 1990; $year--){
                     echo "<option value ='{$year}'>{$year}年</option>";
                 }
                 ?>
             </select>
-                
-                
-                //ここにプルダウン情報作る
-              </div>
+            
+            <select name = "birth_month" required>
+                <option value="">月</option>
+                <?php
+                for($month = 1; $month <= 12; $year++){
+                    echo "<option value = '{$month}'>{$month}月</option>";
+                }
+                ?>
+            </select>
+            
+            <select name = "birth_day" required>
+                <option value="">日</option>
+                <?php
+                for($day = 1; $month <= 31; $day++){
+                    echo "<option value = '{$day}'>{$day}日</option>";
+                }
+                ?>
+            </select>
+        </div>
         
         <div>
             <label>メールアドレス</label>
